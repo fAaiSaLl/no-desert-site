@@ -105,7 +105,7 @@ footer a{color:var(--muted)}
 <div class="tool" id="calc">
 <div class="row"><div><label>Your weight</label><input id="w" type="number" inputmode="decimal" min="20" max="250" placeholder="70"></div><div><label>&nbsp;</label><select id="u"><option value="lb">lb</option><option value="kg">kg</option></select></div></div>
 <div class="row"><div><label>Activity</label><select id="a"><option value="0">Light (desk and couch)</option><option value="350" selected>Medium (walking around)</option><option value="700">High (workouts most days)</option></select></div>
-<div><label>Weather</label><select id="h"><option value="0">Mild or air-conditioned</option><option value="500">Hot (100°F / 38°C+) or working outside</option></select></div></div>
+<div><label>Weather</label><select id="h"><option value="0">Cold</option><option value="0" selected>Mild</option><option value="500">Hot (100°F / 38°C+)</option></select></div></div>
 <div class="out" aria-live="polite"><span>Suggested daily goal</span><b id="r">—</b><span id="c">Enter your weight</span></div>
 <p class="meta" style="margin:10px 0 0">A starting estimate you can adjust. Food also provides some of your water.</p>
 </div>
@@ -129,7 +129,7 @@ function f(){
 <p>It multiplies your weight in kilograms by 33 ml, then adds:</p>
 <ul>
 <li><strong>350 ml</strong> (about 12 oz) for moderate activity, <strong>700 ml</strong> (about 24 oz) if you work out most days.</li>
-<li><strong>500 ml</strong> (about 17 oz) for hot weather (100°F / 38°C and above) or working outdoors.</li>
+<li><strong>500 ml</strong> (about 17 oz) for hot weather (100°F / 38°C and above). Cold and mild weather add nothing.</li>
 </ul>
 <p>This is a <strong>rule-of-thumb estimate</strong>, not a medical requirement. The National Academies' reference amounts that Mayo Clinic cites, about <strong>3.7 liters (125 oz) for men and 2.7 liters (91 oz) for women</strong>, are <em>total</em> water from drinks and food combined, and food supplies roughly 20% of it. Needs vary with body size, activity, climate and health.</p>
 

@@ -105,7 +105,7 @@ footer a{color:var(--muted)}
 <div class="tool" id="calc">
 <label>الوزن (كغ)</label><input id="w" type="number" inputmode="decimal" min="20" max="250" placeholder="70">
 <div class="row"><div><label>مستوى النشاط</label><select id="a"><option value="0">خفيف (عمل مكتبي)</option><option value="350" selected>متوسط (مشي وحركة)</option><option value="700">عالٍ (رياضة شبه يومية)</option></select></div>
-<div><label>الطقس</label><select id="h"><option value="0">معتدل أو مكيّف</option><option value="500">حار (38° فأكثر) أو عمل في الخارج</option></select></div></div>
+<div><label>الطقس</label><select id="h"><option value="0">بارد</option><option value="0" selected>معتدل</option><option value="500">حار (38° فأكثر)</option></select></div></div>
 <div class="out" aria-live="polite"><span>الهدف اليومي المقترح</span><b id="r">—</b><span id="c">أدخل وزنك بالكيلوغرام</span></div>
 <p class="meta" style="margin:10px 0 0">هذا تقدير أولي قابل للتعديل، والطعام يوفر جزءًا من الماء أيضًا.</p>
 </div>
@@ -129,7 +129,7 @@ function f(){
 <p>تضرب الحاسبة وزنك في 33 مل، ثم تضيف:</p>
 <ul>
 <li><strong>350 مل</strong> للنشاط المتوسط، و<strong>700 مل</strong> لمن يمارس الرياضة بشكل شبه يومي.</li>
-<li><strong>500 مل</strong> في الطقس الحار (38° فأكثر) أو عند العمل في الخارج.</li>
+<li><strong>500 مل</strong> إذا كان الطقس حارًا (38° فأكثر). أما البارد والمعتدل فلا يُضاف لهما شيء.</li>
 </ul>
 <p>هذه <strong>قاعدة تقديرية شائعة</strong> وليست توصية طبية رسمية. فبحسب Mayo Clinic، تختلف الحاجة من شخص لآخر، والأرقام المرجعية المعروفة (نحو 3.7 لتر للرجال و2.7 لتر للنساء) تمثّل <strong>إجمالي السوائل</strong> بما فيها ما يأتي من الطعام، الذي يوفر قرابة 20% منها. أما الهيئة الأوروبية لسلامة الغذاء (EFSA) فتقدّر الإجمالي بنحو 2.5 لتر للرجال و2.0 لتر للنساء.</p>
 
