@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#000000">
-<title>Water Intake Calculator: How Much Water Should You Drink a Day?</title>
-<meta name="description" content="Enter your weight (lb or kg), activity and climate to get a daily water estimate in liters, ounces and cups. Includes the formula and when to drink more or less.">
+<title>How Much Water Should You Drink a Day by Weight?</title>
+<meta name="description" content="A simple way to estimate your daily water by weight, activity and climate, with a ready-made chart in pounds, and when to drink more or less.">
 <link rel="canonical" href="https://faaisall.github.io/no-desert-site/en/water-intake-calculator/">
 <meta name="apple-itunes-app" content="app-id=6836084405">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="No Desert">
-<meta property="og:title" content="Water Intake Calculator: How Much Water Should You Drink a Day?">
-<meta property="og:description" content="Enter your weight (lb or kg), activity and climate to get a daily water estimate in liters, ounces and cups. Includes the formula and when to drink more or less.">
+<meta property="og:title" content="How Much Water Should You Drink a Day by Weight?">
+<meta property="og:description" content="A simple way to estimate your daily water by weight, activity and climate, with a ready-made chart in pounds, and when to drink more or less.">
 <meta property="og:url" content="https://faaisall.github.io/no-desert-site/en/water-intake-calculator/">
 <meta property="og:image" content="https://faaisall.github.io/no-desert-site/img/icon.png">
 <meta name="twitter:card" content="summary">
@@ -45,10 +45,16 @@ header nav a.on{color:#001018;background:var(--neon);border-color:var(--neon);fo
 .hero .cta-row{margin-bottom:46px}
 section.feat{padding:40px 0 10px}
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+section.feat h2{margin-top:0}
 .feat-grid div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
 .feat-grid img{width:72px;height:72px;object-fit:contain}
 .feat-grid b{display:block;margin:6px 0 2px}
 .feat-grid span{color:var(--muted);font-size:15px}
+.shots{display:flex;gap:12px;justify-content:center;margin:22px 0 0;overflow:hidden}
+.shots img{width:32%;max-width:220px;border-radius:22px;border:4px solid #1d3a50}
+section.ben{padding:30px 0 0}
+section.ben ul{padding-inline-start:22px}
+.btn.ghost{background:transparent;color:var(--neon);border:1px solid var(--neon);padding:10px 18px;font-size:16px}
 h1{font-size:32px;line-height:1.3;margin:34px 0 8px}
 h2{font-size:24px;line-height:1.35;margin:34px 0 10px}
 h3{font-size:19px;margin:24px 0 6px}
@@ -94,44 +100,25 @@ footer a{color:var(--muted)}
  header nav a{padding:5px 8px}
 }
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Water Intake Calculator: How Much Water Should You Drink a Day?", "description": "Enter your weight (lb or kg), activity and climate to get a daily water estimate in liters, ounces and cups. Includes the formula and when to drink more or less.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "inLanguage": "en", "author": {"@type": "Organization", "name": "No Desert"}, "publisher": {"@type": "Organization", "name": "No Desert"}, "image": "https://faaisall.github.io/no-desert-site/img/icon.png", "mainEntityOfPage": "https://faaisall.github.io/no-desert-site/en/water-intake-calculator/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Much Water Should You Drink a Day by Weight?", "description": "A simple way to estimate your daily water by weight, activity and climate, with a ready-made chart in pounds, and when to drink more or less.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "inLanguage": "en", "author": {"@type": "Organization", "name": "No Desert"}, "publisher": {"@type": "Organization", "name": "No Desert"}, "image": "https://faaisall.github.io/no-desert-site/img/icon.png", "mainEntityOfPage": "https://faaisall.github.io/no-desert-site/en/water-intake-calculator/"}</script>
 </head>
 <body>
 <header><div class="wrap"><a class="logo" href="https://faaisall.github.io/no-desert-site/en/"><img src="https://faaisall.github.io/no-desert-site/img/icon.png" alt="" width="34" height="34">No Desert</a><nav><a class="" href="https://faaisall.github.io/no-desert-site/">عربي</a><a class="on" href="https://faaisall.github.io/no-desert-site/en/">EN</a></nav></div></header>
 <main class="wrap"><article>
-<h1>Water Intake Calculator: How Much Water Should You Drink a Day?</h1>
+<h1>How Much Water Should You Drink a Day by Weight?</h1>
 <div class="meta">Last reviewed: 2026-11-24</div>
-<p><strong>Short answer:</strong> a common starting point is about <strong>33 ml per kilogram</strong> of body weight a day (roughly half an ounce per pound), plus more for exercise and heat. For a 155 lb person with moderate activity that's about <strong>2.7 liters (90 oz)</strong>. Try the calculator:</p>
-<div class="tool" id="calc">
-<div class="row"><div><label>Your weight</label><input id="w" type="number" inputmode="decimal" min="20" max="250" placeholder="70"></div><div><label>&nbsp;</label><select id="u"><option value="lb">lb</option><option value="kg">kg</option></select></div></div>
-<div class="row"><div><label>Activity</label><select id="a"><option value="0">Light (desk and couch)</option><option value="350" selected>Medium (walking around)</option><option value="700">High (workouts most days)</option></select></div>
-<div><label>Weather</label><select id="h"><option value="0">Cold</option><option value="0" selected>Mild</option><option value="500">Hot (100°F / 38°C+)</option></select></div></div>
-<div class="out" aria-live="polite"><span>Suggested daily goal</span><b id="r">—</b><span id="c">Enter your weight</span></div>
-<p class="meta" style="margin:10px 0 0">A starting estimate you can adjust. Food also provides some of your water.</p>
-</div>
-<script>
-(function(){
-var L="en",$=function(i){return document.getElementById(i)};
-function f(){
- var w=parseFloat($('w').value);var u=$('u')?$('u').value:'kg';
- if(!w||w<20){$('r').textContent='—';$('c').textContent="Enter your weight";return}
- var kg=u==='lb'?w*0.4536:w;
- var ml=33*kg+ +$('a').value+ +$('h').value;
- ml=Math.round(Math.max(1500,Math.min(4500,ml))/100)*100;
- var cups=Math.round(ml/250);
- if(L==='en'){var oz=Math.round(ml/29.57);$('r').textContent=(ml/1000).toFixed(1)+' L';$('c').textContent="About {c} cups (8 oz) or {o} oz".replace('{c}',Math.round(oz/8)).replace('{o}',oz);}
- else{$('r').textContent=(ml/1000).toFixed(1).replace('.0','')+' لتر';$('c').textContent="About {c} cups (8 oz) or {o} oz".replace('{c}',cups);}
-}
-['w','a','h','u'].forEach(function(i){var e=$(i);if(e)e.addEventListener('input',f)});
-})();
-</script>
-<h2>How the calculator works</h2>
-<p>It multiplies your weight in kilograms by 33 ml, then adds:</p>
+<p><strong>Short answer:</strong> a common starting point is about <strong>33 ml per kilogram</strong> of body weight a day (roughly half an ounce per pound), plus more for exercise and heat. For a 155 lb person with moderate activity that's about <strong>2.7 liters (90 oz)</strong>.</p>
+<h2>How to work it out yourself</h2>
+<p>Multiply your weight in kilograms by 33 ml (or your weight in pounds by about 0.5 oz), then add:</p>
 <ul>
 <li><strong>350 ml</strong> (about 12 oz) for moderate activity, <strong>700 ml</strong> (about 24 oz) if you work out most days.</li>
 <li><strong>500 ml</strong> (about 17 oz) for hot weather (100°F / 38°C and above). Cold and mild weather add nothing.</li>
 </ul>
 <p>This is a <strong>rule-of-thumb estimate</strong>, not a medical requirement. The National Academies' reference amounts that Mayo Clinic cites, about <strong>3.7 liters (125 oz) for men and 2.7 liters (91 oz) for women</strong>, are <em>total</em> water from drinks and food combined, and food supplies roughly 20% of it. Needs vary with body size, activity, climate and health.</p>
+
+<h2>Quick chart by weight</h2>
+<table><tr><th>Weight</th><th>Light activity</th><th>Moderate</th><th>Active</th></tr><tr><td>120 lb</td><td>61 oz</td><td>73 oz</td><td>84 oz</td></tr><tr><td>140 lb</td><td>71 oz</td><td>83 oz</td><td>95 oz</td></tr><tr><td>160 lb</td><td>81 oz</td><td>93 oz</td><td>105 oz</td></tr><tr><td>180 lb</td><td>91 oz</td><td>103 oz</td><td>115 oz</td></tr><tr><td>200 lb</td><td>101 oz</td><td>113 oz</td><td>125 oz</td></tr><tr><td>220 lb</td><td>111 oz</td><td>123 oz</td><td>135 oz</td></tr></table>
+<p class="meta">Add about 17 oz in hot weather. Estimates, rounded.</p>
 
 <h2>When you need more</h2>
 <ul>
@@ -141,7 +128,7 @@ function f(){
 </ul>
 
 <h2>When to be careful</h2>
-<p>If you have <strong>kidney or heart disease</strong> or have been told to restrict fluids, follow your doctor, not a calculator. Drinking very large amounts quickly can cause low blood sodium (hyponatremia), which can be dangerous. A simple check: pale yellow urine and no thirst usually means you're doing fine.</p>
+<p>If you have <strong>kidney or heart disease</strong> or have been told to restrict fluids, follow your doctor, not these estimates. Drinking very large amounts quickly can cause low blood sodium (hyponatremia), which can be dangerous. A simple check: pale yellow urine and no thirst usually means you're doing fine.</p>
 
 <h2>FAQ</h2>
 <h3>Does coffee or tea count?</h3>
