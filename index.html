@@ -37,7 +37,9 @@ header nav a.on{color:#001018;background:var(--neon);border-color:var(--neon);fo
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
 .hero h1{font-size:38px;line-height:1.25;margin:0 0 12px}
 .hero p{color:#cfe9f7;margin:0 0 22px;font-size:18px}
-.hero .shot{align-self:end;justify-self:center;width:100%;max-width:300px;border-radius:32px 32px 0 0;border:6px solid #1d3a50;border-bottom:0;box-shadow:0 0 80px rgba(25,195,255,.25)}
+.hero .mascot{align-self:center;justify-self:center;width:100%;max-width:300px;margin-bottom:30px;filter:drop-shadow(0 0 40px rgba(25,195,255,.45));animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.hero .mascot{animation:none}}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
 .badges span{font-size:14px;color:#cfe9f7;border:1px solid #1d3a50;border-radius:999px;padding:4px 12px}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--neon);color:#001018;padding:14px 22px;border-radius:16px;font-weight:700;text-decoration:none;font-size:17px}
@@ -93,7 +95,7 @@ footer a{color:var(--muted)}
 @media (max-width:720px){
  .hero .wrap{grid-template-columns:1fr}
  .hero h1{font-size:30px}
- .hero .shot{max-width:240px}
+ .hero .mascot{max-width:220px;margin-bottom:24px}
  .hero .cta-row{margin-bottom:26px}
  .feat-grid,.cards{grid-template-columns:1fr}
  h1{font-size:27px}
@@ -107,7 +109,7 @@ footer a{color:var(--muted)}
 <section class="hero"><div class="wrap">
 <div><h1>تذكير بشرب الماء… بأسلوب مختلف</h1><p>اختر من يذكّرك: المدرب الصارم، أو المذيع العاجل، أو الصديق الساخر، أو الوضع اللطيف. عبارات جديدة كل يوم، وتسجيل الكوب من الإشعار مباشرة، ووضع خاص لرمضان.</p><div class="badges"><span>مجاني</span><span>بالعربية والإنجليزية</span><span>ودجت للشاشة الرئيسية</span><span>دون تسجيل</span></div>
 <div class="cta-row"><a class="btn" href="https://apps.apple.com/app/id6836084405"><span>حمّل تطبيق «لا للتصحر» من App Store<small>للآيفون والآيباد</small></span></a></div></div>
-<img class="shot" src="https://faaisall.github.io/no-desert-site/img/screen-home.webp" alt="" width="300" height="650">
+<img class="mascot" src="https://faaisall.github.io/no-desert-site/img/drop-hero.webp" alt="" width="300" height="400">
 </div></section>
 <section class="feat"><div class="wrap"><h2>ماذا يفعل التطبيق؟</h2><div class="feat-grid"><div><img src="https://faaisall.github.io/no-desert-site/img/drop-cool.webp" alt="" loading="lazy" width="72" height="72"><b>شخصيات تذكّرك بأسلوبها</b><span>اختر من يذكّرك: المدرب الصارم، أو المذيع العاجل، أو الصديق الساخر، أو الوضع اللطيف. وتصلك عبارات جديدة كل يوم.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-glass.webp" alt="" loading="lazy" width="72" height="72"><b>سجّل الكوب بضغطة</b><span>سجّل الماء من الإشعار نفسه دون فتح التطبيق، أو من الأزرار السريعة: كوب، قنينة، شاي، قهوة، عصير، مشروب طاقة.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-thumbs.webp" alt="" loading="lazy" width="72" height="72"><b>هدف يناسبك</b><span>يقترح التطبيق هدفًا يوميًا حسب وزنك ونشاطك، ويمكنك تعديله. وفيه خيار لمن لديه تعليمات طبية بتقليل السوائل.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-jump.webp" alt="" loading="lazy" width="72" height="72"><b>رمضان والأيام الحارة</b><span>في رمضان تصلك التذكيرات من الإفطار إلى السحور فقط. وإذا حددت مدينتك يزيد التذكير في الأيام الحارة.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-tea.webp" alt="" loading="lazy" width="72" height="72"><b>إحصائيات وشارات</b><span>تابع معدلك الأسبوعي والشهري، وسلسلة الأيام التي حققت فيها هدفك، واكسب الشارات.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-coffee.webp" alt="" loading="lazy" width="72" height="72"><b>ودجت ومزامنة</b><span>نسبتك اليوم على الشاشة الرئيسية، وتسجيل اختياري بحساب Apple أو Google ليُحفظ سجلك إن غيّرت جوالك.</span></div></div></div></section>
 <section class="ben"><div class="wrap"><h2>لماذا يحتاج جسمك إلى الماء؟</h2><p>يدخل الماء في كل وظيفة تقريبًا في الجسم. وبحسب المراكز الأمريكية لمكافحة الأمراض (CDC) وMayo Clinic، يساعدك الماء على:</p><ul><li>الحفاظ على درجة حرارة الجسم طبيعية، خاصة في الحر وأثناء الرياضة.</li><li>تليين المفاصل وحمايتها.</li><li>حماية النخاع الشوكي والأنسجة الحساسة.</li><li>التخلص من الفضلات عبر البول والعرق.</li><li>نقل العناصر الغذائية إلى الخلايا.</li></ul><p>وعندما لا تشرب ما يكفي، قد تشعر بالعطش والتعب والصداع، ويصبح لون البول داكنًا. ويزداد الخطر في الحر وعند كبار السن والأطفال.</p>

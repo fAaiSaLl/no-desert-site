@@ -37,7 +37,9 @@ header nav a.on{color:#001018;background:var(--neon);border-color:var(--neon);fo
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
 .hero h1{font-size:38px;line-height:1.25;margin:0 0 12px}
 .hero p{color:#cfe9f7;margin:0 0 22px;font-size:18px}
-.hero .shot{align-self:end;justify-self:center;width:100%;max-width:300px;border-radius:32px 32px 0 0;border:6px solid #1d3a50;border-bottom:0;box-shadow:0 0 80px rgba(25,195,255,.25)}
+.hero .mascot{align-self:center;justify-self:center;width:100%;max-width:300px;margin-bottom:30px;filter:drop-shadow(0 0 40px rgba(25,195,255,.45));animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.hero .mascot{animation:none}}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
 .badges span{font-size:14px;color:#cfe9f7;border:1px solid #1d3a50;border-radius:999px;padding:4px 12px}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--neon);color:#001018;padding:14px 22px;border-radius:16px;font-weight:700;text-decoration:none;font-size:17px}
@@ -93,7 +95,7 @@ footer a{color:var(--muted)}
 @media (max-width:720px){
  .hero .wrap{grid-template-columns:1fr}
  .hero h1{font-size:30px}
- .hero .shot{max-width:240px}
+ .hero .mascot{max-width:220px;margin-bottom:24px}
  .hero .cta-row{margin-bottom:26px}
  .feat-grid,.cards{grid-template-columns:1fr}
  h1{font-size:27px}

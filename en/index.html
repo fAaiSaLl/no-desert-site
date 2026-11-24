@@ -37,7 +37,9 @@ header nav a.on{color:#001018;background:var(--neon);border-color:var(--neon);fo
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:end}
 .hero h1{font-size:38px;line-height:1.25;margin:0 0 12px}
 .hero p{color:#cfe9f7;margin:0 0 22px;font-size:18px}
-.hero .shot{align-self:end;justify-self:center;width:100%;max-width:300px;border-radius:32px 32px 0 0;border:6px solid #1d3a50;border-bottom:0;box-shadow:0 0 80px rgba(25,195,255,.25)}
+.hero .mascot{align-self:center;justify-self:center;width:100%;max-width:300px;margin-bottom:30px;filter:drop-shadow(0 0 40px rgba(25,195,255,.45));animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){.hero .mascot{animation:none}}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
 .badges span{font-size:14px;color:#cfe9f7;border:1px solid #1d3a50;border-radius:999px;padding:4px 12px}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--neon);color:#001018;padding:14px 22px;border-radius:16px;font-weight:700;text-decoration:none;font-size:17px}
@@ -93,7 +95,7 @@ footer a{color:var(--muted)}
 @media (max-width:720px){
  .hero .wrap{grid-template-columns:1fr}
  .hero h1{font-size:30px}
- .hero .shot{max-width:240px}
+ .hero .mascot{max-width:220px;margin-bottom:24px}
  .hero .cta-row{margin-bottom:26px}
  .feat-grid,.cards{grid-template-columns:1fr}
  h1{font-size:27px}
@@ -107,7 +109,7 @@ footer a{color:var(--muted)}
 <section class="hero"><div class="wrap">
 <div><h1>A water reminder you won’t ignore</h1><p>Pick who nags you: The Strict Coach, Breaking News, The Roaster or Kind Mode. Fresh lines every day, log a glass straight from the notification, and a Ramadan mode.</p><div class="badges"><span>Free</span><span>English and Arabic</span><span>Home Screen widget</span><span>No sign-up needed</span></div>
 <div class="cta-row"><a class="btn" href="https://apps.apple.com/app/id6836084405"><span>Get No Desert on the App Store<small>For iPhone and iPad</small></span></a></div></div>
-<img class="shot" src="https://faaisall.github.io/no-desert-site/img/screen-home.webp" alt="" width="300" height="650">
+<img class="mascot" src="https://faaisall.github.io/no-desert-site/img/drop-hero.webp" alt="" width="300" height="400">
 </div></section>
 <section class="feat"><div class="wrap"><h2>What the app does</h2><div class="feat-grid"><div><img src="https://faaisall.github.io/no-desert-site/img/drop-cool.webp" alt="" loading="lazy" width="72" height="72"><b>Personas with attitude</b><span>Pick who nags you: The Strict Coach, Breaking News, The Roaster or Kind Mode. Fresh lines every day.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-glass.webp" alt="" loading="lazy" width="72" height="72"><b>Log a glass in one tap</b><span>Log water right from the notification, or use quick buttons for a glass, bottle, tea, coffee, juice or energy drink.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-thumbs.webp" alt="" loading="lazy" width="72" height="72"><b>A goal that fits you</b><span>A daily goal suggested from your weight and activity, fully editable, with an option for people on a fluid restriction.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-jump.webp" alt="" loading="lazy" width="72" height="72"><b>Heat and Ramadan</b><span>Extra reminders on hot days in your city, and a Ramadan mode that reminds you only between iftar and suhoor.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-tea.webp" alt="" loading="lazy" width="72" height="72"><b>Stats and badges</b><span>See your weekly and monthly average, your streak of goal days, and earn badges along the way.</span></div><div><img src="https://faaisall.github.io/no-desert-site/img/drop-coffee.webp" alt="" loading="lazy" width="72" height="72"><b>Widget and sync</b><span>Today’s progress on your Home Screen, plus optional sign-in with Apple or Google to keep your log on a new phone.</span></div></div></div></section>
 <section class="ben"><div class="wrap"><h2>Why your body needs water</h2><p>Water is involved in nearly everything your body does. According to the CDC and Mayo Clinic, water helps you:</p><ul><li>Keep a normal body temperature, especially in the heat and during exercise.</li><li>Lubricate and cushion your joints.</li><li>Protect your spinal cord and other sensitive tissues.</li><li>Get rid of wastes through urine and sweat.</li><li>Carry nutrients to your cells.</li></ul><p>When you don’t drink enough, you may feel thirsty, tired or headachy, and your urine turns darker. The risk goes up in hot weather and for older adults and children.</p>
