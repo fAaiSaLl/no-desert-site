@@ -97,7 +97,7 @@ footer a{color:var(--muted)}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Water Intake Calculator: How Much Water Should You Drink a Day?", "description": "Enter your weight (lb or kg), activity and climate to get a daily water estimate in liters, ounces and cups. Includes the formula and when to drink more or less.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "inLanguage": "en", "author": {"@type": "Organization", "name": "No Desert"}, "publisher": {"@type": "Organization", "name": "No Desert"}, "image": "https://faaisall.github.io/no-desert-site/img/icon.png", "mainEntityOfPage": "https://faaisall.github.io/no-desert-site/en/water-intake-calculator/"}</script>
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="https://faaisall.github.io/no-desert-site/en/"><img src="https://faaisall.github.io/no-desert-site/img/icon.png" alt="" width="34" height="34">No Desert</a><nav><a class="" href="https://faaisall.github.io/no-desert-site/">خليجي</a><a class="" href="https://faaisall.github.io/no-desert-site/ar/">فصحى</a><a class="on" href="https://faaisall.github.io/no-desert-site/en/">EN</a></nav></div></header>
+<header><div class="wrap"><a class="logo" href="https://faaisall.github.io/no-desert-site/en/"><img src="https://faaisall.github.io/no-desert-site/img/icon.png" alt="" width="34" height="34">No Desert</a><nav><a class="" href="https://faaisall.github.io/no-desert-site/">عربي</a><a class="on" href="https://faaisall.github.io/no-desert-site/en/">EN</a></nav></div></header>
 <main class="wrap"><article>
 <h1>Water Intake Calculator: How Much Water Should You Drink a Day?</h1>
 <div class="meta">Last reviewed: 2026-11-24</div>
@@ -120,7 +120,7 @@ function f(){
  ml=Math.round(Math.max(1500,Math.min(4500,ml))/100)*100;
  var cups=Math.round(ml/250);
  if(L==='en'){var oz=Math.round(ml/29.57);$('r').textContent=(ml/1000).toFixed(1)+' L';$('c').textContent="About {c} cups (8 oz) or {o} oz".replace('{c}',Math.round(oz/8)).replace('{o}',oz);}
- else{$('r').textContent=(ml/1000).toFixed(1).replace('.0','')+(L==='sa'?' لتر':' لتر');$('c').textContent="About {c} cups (8 oz) or {o} oz".replace('{c}',cups);}
+ else{$('r').textContent=(ml/1000).toFixed(1).replace('.0','')+' لتر';$('c').textContent="About {c} cups (8 oz) or {o} oz".replace('{c}',cups);}
 }
 ['w','a','h','u'].forEach(function(i){var e=$(i);if(e)e.addEventListener('input',f)});
 })();
